@@ -1,0 +1,31 @@
+<h1>User#new</h1>
+<p>Find me in app/views/user/new.html.erb</p>
+
+<!-- <div class="col-8 push-2">
+		<h2>Sign Up</h2>
+		<%=form_for @user do |f| %>
+			<label> -->
+	<h2>Sign Up!</h2>
+	<%=form_for @user do |f| %>
+	
+		<label>
+			Email Address
+			<br />
+			<%= f.text_field :email %>
+		</label>	
+			
+		<label>
+			Password
+			<br />
+			<%= f.password_field :password %>
+		</label>
+
+		<label>
+			Confirm Password
+			<br />
+			<%= f.password_field :password_confirm%>
+		</label>
+
+			<%= f.submit %>
+		<%end%>
+	</div>

@@ -1,0 +1,20 @@
+<h1>View All the Things!</h1>
+
+<% @stories.each_with_index do |story, index|%>
+
+	<p>
+		<strong><%=index+1%>.</strong> 
+		<br />
+		<label>
+		Title:
+		<strong><%=story.title%></strong>
+		<br />
+		<label>
+		Category:
+		<strong><%=story.category%></strong>
+		<br />
+		<label>
+		Upvotes:
+		<strong><%=story.upvotes%></strong>
+	</p>
+<%end%>

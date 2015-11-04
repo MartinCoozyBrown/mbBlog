@@ -1,0 +1,35 @@
+<h1>Add and New Story!</h1>
+
+<%= form_for @stories do |f| %>
+    <label>
+	Title
+	<br />
+	<%= f.text_field :title %>
+	</label>
+
+	<br />
+
+	<label>
+	Category
+	<br />
+	<%= f.text_field :category %>
+	</label>
+
+	<br />
+
+	<label>
+	Upvotes
+	<br />
+	<%= f.text_field :upvotes %>
+	</label>
+
+	<br />
+
+	<label>
+	Link
+	<br />
+	<%= f.text_field :link %>
+	</label>
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>Welcome to Rewsly</h1>
+	
+	<p>wow what a stupid name for a website</p>
+
+<h2>List of Stories</h2>
+	
+	<% @stories.each_with_index do |story, index|%>
+
+	<p>
+		<strong><%=index+1%>.</strong> <a href="<%=story.link%>" target="blank"><%=story.title%></a>
+	</p>
+
+
+	<%end%>
+	
+				
